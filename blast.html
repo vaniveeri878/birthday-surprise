@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💖 Birthday Blast 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      text-align: center;
+      color: #d6336c;
+    }
+    header {
+      background: #d6336c;
+      padding: 25px;
+      color: #fff;
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px #00000055;
+    }
+    nav {
+      background: #ffe066;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d6336c;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff4081;
+    }
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: radial-gradient(circle at top, #fffde1 0%, #ee9ca7 100%);
+      color: #fff;
+    }
+    .hero h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4em;
+      margin-bottom: 10px;
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4081;
+      animation: glow 2s infinite alternate;
+    }
+    .hero p {
+      font-size: 1.5em;
+      font-style: italic;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff; }
+      to { text-shadow: 0 0 25px #ff4081; }
+    }
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2em;
+      color: #d6336c;
+      margin-bottom: 20px;
+    }
+    video, img {
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    }
+    .daughter {
+      font-size: 1.4em;
+      font-style: italic;
+      color: #d6336c;
+      margin-top: 20px;
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    button {
+      background: #d6336c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 12px 20px;
+      font-size: 1.1em;
+    }
+    button:hover {
+      background: #b2225c;
+    }
+	.slideshow-container {
+  position: relative;
+  margin: auto;
+  max-width: 700px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  margin-top: -22px;
+  color: #d6336c;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.next { right: 0; }
+.prev:hover, .next:hover { color: #ff4081; }
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #d6336c;
+}
+  </style>
+</head>
+<body>
+  <header>💖 Birthday Blast 💖</header>
+  <nav>
+  <a href="slideshow.html" target="_self">Slideshow 🎥</a>
+  <a href="#photos">Memories 📸</a>
+  <a href="#message">Message 💕</a>
+  <a href="#cake">Cake 🎂</a>
+  <a href="#" id="logout">Logout 🚪</a>
+</nav>
+
+
+  <div class="hero">
+  <h1 id="welcomeMessage">To My Dearest Wife</h1>
+  <p>You are my forever love 💖</p>
+  <p style="font-style:italic;">Even though oceans separate us, my soul is always beside you. On your birthday, I thank God for the gift of you. May His grace surround you with peace, joy, and endless love.</p>
+</div>
+  <div id="photos" class="section">
+  <h2>Our Beautiful Memories</h2>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="photo1.jpg" style="width:60%;border-radius:12px;">
+    </div>
+    <div class="mySlides fade">
+      <img src="photo2.jpg" style="width:60%;border-radius:12px;">
+    </div>
+    <div class="mySlides fade">
+      <img src="photo3.jpg" style="width:60%;border-radius:12px;">
+    </div>
+
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+
+  <!-- Dots below slideshow -->
+  <div style="text-align:center; margin-top:15px;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+
+  <div id="message" class="section">
+    <h2>From Gracie Ann</h2>
+    <div class="daughter">💕 Amma, I may be only 5 months old, but my love for you is endless. You are my angel on earth. I may be small, but I know you are my greatest blessing from God. Happy Birthday Amma — from your little Gracie 💕</div>
+  </div>
+
+  <div id="cake" class="section">
+    <h2>Virtual Cake Cutting 🎂</h2>
+    <p>Click the button below to cut or reset the cake!</p>
+    <button onclick="toggleCake()">Cut / Reset Cake 🎉</button>
+    <div id="cakeArea">🎂</div>
+  </div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail dot controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+// Auto-play every 4 seconds
+setInterval(() => { plusSlides(1); }, 4000);
+</script>
+  <script>
+    let cakeCut = false;
+    function toggleCake() {
+      const cake = document.getElementById("cakeArea");
+      if (!cakeCut) {
+        cake.innerHTML = "🍰 🍰 🍰 <br> Happy Birthday Amma! 🎉";
+        cakeCut = true;
+      } else {
+        cake.innerHTML = "🎂";
+        cakeCut = false;
+      }
+    }
+  </script>
+  <script>
+  // Redirect to login if not logged in
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "index.html";
+  }
+
+  // Show personalized welcome
+  const user = localStorage.getItem("username");
+  if (user) {
+    document.getElementById("welcomeMessage").innerText = "Welcome " + user.charAt(0).toUpperCase() + user.slice(1) + " 💖";
+  }
+
+  // Logout clears session and goes back to access gate
+  document.getElementById("logout").addEventListener("click", function(e) {
+    e.preventDefault();
+    localStorage.removeItem("loggedIn");
+    localStorage.removeItem("username");
+    window.location.href = "index.html";
+  });
+</script>
+</body>
+</html>
